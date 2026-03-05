@@ -4,4 +4,6 @@ __pycache__/
 .venv/
 venv/
 node_modules/
+.nuxt/
+.output/
 .DS_Store
