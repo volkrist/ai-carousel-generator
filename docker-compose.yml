@@ -14,6 +14,7 @@ services:
       S3_ACCESS_KEY: minio
       S3_SECRET_KEY: minio123
       S3_BUCKET: carousel-assets
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
 
   postgres:
     image: postgres:15
@@ -33,5 +34,5 @@ services:
       MINIO_ROOT_USER: minio
       MINIO_ROOT_PASSWORD: minio123
     ports:
-      - "9000:9000"
-      - "9001:9001"
+      - "9100:9000"
+      - "9101:9001"
